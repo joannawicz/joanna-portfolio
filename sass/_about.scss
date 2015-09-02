@@ -1,0 +1,119 @@
+.about {
+	display: flex; 
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	position: relative;
+	align-items: center;
+	-webkit-align-items: center;
+	overflow-x: hidden;
+	background: white;
+
+
+}
+.about-content {
+	width: 50%;
+	margin: 0;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	p {
+		margin: 0;
+		font-family: 'Playfair Display', serif;
+		font-size: 18px;
+		letter-spacing: .5px;
+		line-height: 200%;
+		font-weight: 400;
+		padding: 1%;
+	}
+
+}
+li.widget_text {
+	display: block;
+	width: 100%;
+	margin-top: 3%;
+}
+
+.tool-icons .textwidget {
+	display: flex;
+	-webkit-display: flex; 
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	i {
+		font-size: 36px;
+
+	}
+}
+.design-icons .textwidget {
+	margin-top: 1%;
+	display: flex;
+	-webkit-display: flex; 
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: center; 
+	i {
+		font-size: 36px;
+		padding-left: 7%;
+	}
+}
+.design-icons .textwidget i:first-child {
+	padding-left: 0;
+}
+
+.about-header {
+	width: 50%;
+	h2 {
+		font-family: 'Playfair Display', sans-serif; 
+		background: none;
+		font-size: 120px; 
+		font-style: italic;
+		letter-spacing: 1px;
+		position: absolute;
+		top: 0;
+		right: -1%;
+		margin: 0px;
+		z-index: 10;
+	}
+}
+.aboutimg-holder {
+	width: 100%;
+	img {
+		padding: 7%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		overflow: hidden;
+	}
+}
+@media (max-width: 880px) {
+	.about-content {
+		width: 100%;
+		order: 2;
+		padding-top: 0;
+		padding-right: 5%;
+	}
+	.about-header {
+		width: 100%;
+	}
+}
+@media (max-width: 490px) {
+	.about-header h2 {
+		font-size: 70px;
+	}
+}
+
+
+
+
+

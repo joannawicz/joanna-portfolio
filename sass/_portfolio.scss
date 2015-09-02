@@ -1,0 +1,396 @@
+
+.portfolio {
+	position: relative;
+	background: #FAE3E0;
+	width: 100%;
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	overflow-x: hidden;
+
+
+}
+.portfolio-header h2 {
+		font-family: 'Playfair Display', sans-serif; 
+		background: none;
+		font-size: 120px; 
+		font-style: italic;
+		letter-spacing: 1px;
+		position: absolute;
+		top: 0;
+		right: -1%;
+		margin: 0px;
+		z-index: 10;
+}
+/* Styles for the first portfolio item ---
+--- Styled as a header -----------------*/
+/*Left side of portfolio including description */
+
+.portfolio-item.first-portfolio{
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	align-items: center;
+	-webkit-align-items: center;
+	padding: 5% 0;
+	width: 100%;
+	background: #FAE3E0;
+}
+.first-portfolio .portfolio-description {
+	width: 30%;
+	padding: 0;
+	padding-left: 5%;
+	h3 { 
+		display: inline-block;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		letter-spacing: 2px;	
+		font-size: 40px;
+		padding: 1%;
+		margin: 0;
+	}	
+}
+.first-portfolio .portfolio-description h4 {
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 400;
+	line-height: 150%;
+	letter-spacing: 1px;
+
+}
+.first-portfolio .portfolio-description p {
+	font-family: 'Playfair Display', serif; 
+	font-weight: 400; 
+	line-height: 170%;
+	font-size: 16px;
+	height: auto;
+}
+.first-portfolio .technologies {
+	display: flex;
+	-webkit-flex-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+.first-portfolio .technology {
+	display: inline-block;
+	text-align: center;
+	margin-top: 1%;
+	padding-right: 5%;
+	p {
+		font-size: 30px;
+		margin: 0;
+		color: black;
+	}	
+}
+.first-portfolio .static-live {
+	margin: 0;
+	margin-top: 7%;
+	a {
+		display: inline-block;
+		width: 130px;
+		text-align: center;
+		padding: 5%;
+		background: transparent;
+		border: 2px solid white;
+		color: black;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		transition: 0.5s ease;
+	}
+}
+.first-portfolio .static-live a:hover {
+	background: white;
+}
+
+/* Right side of portfolio item --
+--- images etc. -----------*/
+
+.first-portfolio .portfolio-images {
+	width: 70%;
+	background: #FAE3E0;
+	padding: 0;
+	padding-right: 5%; 
+}
+.first-portfolio .portfolio-image {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	img {
+		min-height: 100%;
+		min-width: 100%;
+		height: auto;
+		width: auto;
+		padding: 0; 
+		margin: 0; 
+	}
+}
+.first-portfolio .view-live {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 85%;
+	height: 80%;
+	position: absolute;
+	top: 5%;
+	left: 7%;
+	transition: 1s ease;
+	.live-button {
+		display: flex;
+		text-align: center;
+		background: transparent;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		transition: 1s ease;
+		p {	
+		text-transform: uppercase;
+		margin: auto;	
+		color: transparent;
+		text-decoration: none;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
+		font-size: 18px;
+		letter-spacing: 2px;
+		transition: 1s ease;
+		}
+	}
+}
+
+
+.first-portfolio .view-live:hover {
+	background: rgba(0, 0, 0, 0.7);
+	.live-button {
+		background: white;
+		p {
+			color: black;
+		}
+	}
+}
+
+
+
+/* Styles for all other portfolio items --
+-------- following the header ------------*/
+
+/* Left side of Portfolio - description etc.)*/
+	
+.portfolio-item {
+	width: 50%;
+	background: white;
+}
+.portfolio-description {
+	width: 90%;
+	padding-left: 10%;
+	padding-top: 5%;
+	h3 {
+		display: inline-block;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		letter-spacing: 2px;	
+		font-size: 40px;
+		padding: .5%;
+		margin: 0;
+	}	
+}
+.portfolio-description h4 {
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	line-height: 150%;
+
+}
+.portfolio-description p {
+	font-family: 'Playfair Display', serif; 
+	font-weight: 400; 
+	line-height: 28px;
+	font-size: 16px; 
+	height: 20%;
+	letter-spacing: .5px;
+}
+
+.technologies {
+	/*width: 50%;*/
+}
+.technology {
+	float: left;
+	margin-top: 1%;
+	margin-right: 1%;
+	padding-right: 2%;
+	p {
+		font-size: 30px;
+		margin: 0;
+		color: #FAE3E0;
+	}	
+}
+
+.static-live {
+	float: left;
+	margin-top: 1%;
+	margin-left: 3%;
+	a {
+		display: inline-block;
+		width: 130px;
+		text-align: center;
+		padding: 5%;
+		background: transparent;
+		border: 2px solid #fae3e0;
+		color: black;
+		font-family: 'Raleway', sans-serif;
+		font-size: 14px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		transition: 0.5s ease;
+	}
+}
+.static-live a:hover {
+	background: #fae3e0;
+}
+
+
+/*  
+--- Image and stuff -----*/
+.portfolio-images {
+	width: 90%;
+	margin: auto;
+	padding: 5% 5%;
+}
+.portfolio-image {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	img {
+		min-height: 100%;
+		min-width: 100%;
+		height: auto;
+		width: auto;
+		padding: 0; 
+		margin: 0; 
+	}
+}
+.view-live {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	width: 85%;
+	height: 80%;
+	position: absolute;
+	top: 5%;
+	left: 7%;
+	transition: 1s ease;
+	.live-button {
+		display: flex;
+		text-align: center;
+		background: transparent;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		transition: 1s ease;
+		p {	
+		margin: auto;	
+		color: transparent;
+		text-decoration: none;
+		font-family: 'Raleway', sans-serif;
+		font-size: 12px;
+		letter-spacing: 2px;
+		transition: 1s ease;
+		text-transform: uppercase;
+		font-weight: 600;
+		}
+	}
+}
+
+
+.view-live:hover {
+	background: rgba(0, 0, 0, 0.7);
+	.live-button {
+		background: white;
+		p {
+			color: black;
+			outline: none;
+		}
+	}
+}
+
+/* Media Queries */ 
+
+@media (max-width: 1200px) {
+	.portfolio-images {
+		width: 100%;
+		padding: 8% 5%;
+	}
+	.view-live .live-button p {
+		font-size: 12px;
+	}	
+
+}
+@media (max-width: 990px) {
+	.first-portfolio .static-live {
+		width: 100%;
+	}
+	.portfolio-header h2 {
+		top: 30;
+	}
+	.technology {
+		padding-right: 0;
+	}
+
+}
+@media (max-width: 880px) {
+	.first-portfolio .portfolio-images {
+		width: 100%;
+		padding-right: 0;
+	}
+	.first-portfolio .portfolio-description {
+		width: 100%;
+		padding-right: 5%;
+		order: 2;
+	}
+	.first-portfolio .static-live {
+		margin-top: 4%;
+
+	}
+	.first-portfolio .static-live a {
+		padding: 2%;
+	}
+	.portfolio-item {
+		width: 100%;
+		padding-bottom: 1%;
+	}
+	.porfolio-images {
+		padding: 5% 5%;
+	}
+	.static-live a {
+		width: 200px;
+	}
+
+
+}
+
+@media (max-width: 490px) {
+	.portfolio-header h2 {
+		font-size: 70px;
+	}
+}
+
+
+
+
+
